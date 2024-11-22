@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced CDMA Signal Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Enhanced CDMA Signal Visualizer</h1>
+        <div id="visualizer">
+            <canvas id="signalCanvas" width="800" height="400"></canvas>
+        </div>
+        <div class="controls">
+            <label for="userSignal">Enter User Signal (comma-separated):</label>
+            <input type="text" id="userSignal" placeholder="e.g., 1,-1,1,1,-1,1,-1,-1">
+            <label for="spreadingCode">Enter Spreading Code (comma-separated):</label>
+            <input type="text" id="spreadingCode" placeholder="e.g., 1,-1,1,-1,1,-1,1,-1">
+            <button id="simulateButton">Simulate CDMA</button>
+            <button id="downloadButton">Download Visualization</button>
+        </div>
+        <div id="metrics">
+            <h2>Performance Metrics</h2>
+            <p id="snr">SNR: -</p>
+            <p id="ber">BER: -</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
